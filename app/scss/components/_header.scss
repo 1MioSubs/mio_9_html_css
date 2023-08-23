@@ -1,0 +1,64 @@
+.header {
+  padding: 40px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__item {
+    line-height: 140%; /* 22.4px */
+  }
+  &__form {
+    position: relative;
+  }
+  &__btn {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__search {
+    // padding-left: 30px;
+    margin-left: 44px;
+    border: none;
+    width: 150px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    outline: none;
+  }
+  &__select {
+    @extend %pt-700;
+    font-size: 16px;
+    line-height: 140%; /* 22.4px */
+    border: none;
+    background: transparent;
+    appearance: none;
+    padding-right: 20px;
+  }
+
+  &__select-wrapper {
+    position: relative;
+  }
+
+  &__select-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 0;
+    top: 7px;
+    background-image: url(../images/icons/arrow-sel.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+}
