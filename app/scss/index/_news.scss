@@ -50,6 +50,8 @@
       text-transform: uppercase;
     }
     &-title {
+      color: #333;
+      display: block;
       margin-bottom: 12px;
       @extend %pt-700;
       font-size: 19px;
