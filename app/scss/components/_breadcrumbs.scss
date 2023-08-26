@@ -1,0 +1,36 @@
+.breadcrumbs {
+  background: #3d348b11;
+  padding: 25px 0;
+  &__inner {
+  }
+  &__nav {
+  }
+  &__items {
+    display: flex;
+  }
+  &__items li + li{
+    padding-left: 40px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/arrow-bread.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 10px;
+      height: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 15px;
+
+    }
+  }
+  &__link {
+    color: #333;
+    @extend %pt-700;
+    font-size: 13px;
+    line-height: 140%; /* 18.2px */
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+  }
+}
